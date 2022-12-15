@@ -1,0 +1,39 @@
+
+body {margin: 0 10px 30px 10px; padding: 0; font-family: "Verdana";}
+
+header {background-color: rgb(255, 0, 0); margin:0; padding: 20px 0;}
+
+header #logo {width: 35%;}
+
+header #empresa {width: 60%;}
+
+header #empresa h1 {float: right;}
+
+#logo, #empresa {display: inline-block;}
+
+#formulario_ciente {background-color: #55ccff; padding: 30px;}
+
+#formulario_pedido {background-color: #40ccbb; padding: 30px;}
+
+#contenido label {vertical-align: top;}
+
+#btn_enviar {padding: 7px 15px;}
+
+#contenido {padding: 0; margin: 0;}
+
+#mensaje {text-align: center; margin: 60px;}
+
+.lblcampos {
+    display: inline-block;
+    min-width: 120px !important;
+    vertical-align: top;
+}
+
+input[type="text"], input[type="tel"], textarea {width: 300px;}
+
+input[type="text"], input[type="tel"] {
+    width: 300px;
+    padding: 3px 0;
+}
+
+#ingredientes {padding-bottom: 10px !important;}

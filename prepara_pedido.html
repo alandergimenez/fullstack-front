@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Pizzas Full Stack</title>
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="prepara_pedido.html"><img src="images/logo_pizzas_full_stack.png" alt="Pizzeria" width="280" height="auto"></a>
+        </div>
+        <div id="empresa"><h1>Pizzas Full Stack</h1></div>
+    </header>
+
+    <div id="contenido">
+        <form id="form_pedidos" action="http://localhost:5000/pizza" method="post">
+
+            <div id="formulario_ciente">
+              
+                <b><h2>Datos del cliente</h2></b><br>
+
+                <div>
+                    <span class="lblcampos"><label id="lblnombre" for="nombre">Nombre:</label></span>
+                    <input type="text" id="nombre" name="nombre"><br><br>    
+                </div>
+
+                <div>
+                    <span class="lblcampos"><label id="lblapellidos" for="apellidos">Apellidos:</label></span>
+                    <input type="text" id="apellidos" name="apellidos"><br><br>    
+                </div>
+                
+                <div>
+                    <span class="lblcampos"><label for="nacimiento">Fecha Nac.:</label></span>
+                    <input type="date" id="nacimiento" name="nacimiento"><br><br>    
+                </div>
+
+                <div>
+                    <span class="lblcampos"><label for="telefono">Teléfono:</label></span>
+                    <input type="tel" id="telefono" name="telefono"><br><br>
+                </div>
+                
+                <div>
+                    <span class="lblcampos"><label for="direccion">Dirección:</label></span>
+                    <textarea name="direccion" id="direccion" cols="30" rows="6"></textarea><br><br>
+                </div>
+
+            </div>
+
+            <div id="formulario_pedido">
+              
+                <b><h2>Datos del pedido</h2></b><br>
+
+                <div>
+                    <label for="tamano">Tamano de la pizza:</label>
+                    <select name="tamano" id="tamano">
+                        <option value="Pequeña">Pequeña</option>
+                        <option value="Mediana">Mediana</option>
+                        <option value="Grande">Grande</option>
+                    </select><br><br>                   
+                </div>
+
+                <div>
+                    <label id="ingredientes" for="ingredientes">Ingredientes a elegir:</label><br>
+                    <input type="checkbox" id="jamon_york" name="jamon_york" value="Jamón York">
+                    <label for="jamon_york">Jamón York</label><br>
+    
+                    <input type="checkbox" id="champinones" name="champinones" value="Champiñones">
+                    <label for="champinones">Champiñones</label><br>
+    
+                    <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+                    <label for="pepperoni">Pepperoni</label><br>
+    
+                    <input type="checkbox" id="aceitunas" name="aceitunas" value="Aceitunas">
+                    <label for="aceitunas">Aceitunas</label><br><br>
+                </div>
+
+                <input type="submit" id="btn_enviar" value="Enviar pedido"><br><br>
+            </div>
+
+        </form>       
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
