@@ -37,3 +37,5 @@ input[type="text"], input[type="tel"] {
 }
 
 #ingredientes {padding-bottom: 10px !important;}
+
+.espacio-i {padding-left: 10px; color: red;}
